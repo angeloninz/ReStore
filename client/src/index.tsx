@@ -19,15 +19,13 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
-    <HistoryRouter history={history}>
-      {/*<StoreProvider>*/}
-      <Provider store={store}>
-        <App />
-      </Provider>
-      {/*</StoreProvider>*/}
-    </HistoryRouter>
-  </React.StrictMode>
+  <HistoryRouter history={history}>
+    {/*<StoreProvider>*/}
+    <Provider store={store}>
+      <App />
+    </Provider>
+    {/*</StoreProvider>*/}
+  </HistoryRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
